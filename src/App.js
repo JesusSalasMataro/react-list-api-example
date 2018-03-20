@@ -46,7 +46,7 @@ export default class App extends Component {
                 }
                 {
                     this.state.users.map((user, index) => {
-                        return <p>{user.name}</p>
+                        return <p key={user.id}>{user.name}</p>
                     })    
                 }
             </div>
